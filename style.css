@@ -78,8 +78,7 @@ a:hover {
   cursor: default;
   color: white;
 }
-.logo:hover {
-}
+
 /* Dark mode */
 #mode-icon {
   width: 20px;
@@ -321,6 +320,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .competences-info {
   display: flex;
@@ -355,6 +357,10 @@ footer {
 .competences-info-card p {
   margin-top: 10px;
 }
+
+.footer {
+  position: relative;
+}
 /* media queries */
 @media screen and (max-width: 1200px) {
   .competences-info {
@@ -371,6 +377,16 @@ footer {
   .section-container {
     display: block;
   }
+  #contact .card-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  #contact,
+  .card {
+    width: 17rem;
+  }
+
   section,
   .section-container {
     height: fit-content;
