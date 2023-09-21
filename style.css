@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
+/* Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* colors */
+:root {
+  --primary-color-navbar: #a1ccd1;
+  --primary-color-footer: #7c9d96;
+  --primary-color-body: #f4f2de;
+  --primary-color-card: white;
+}
+.dark-theme {
+  --primary-color-navbar: #333;
+  --primary-color-footer: #333;
+  --primary-color-body: black;
+  --primary-color-card: #acb1d6;
+}
+/* paragraphe */
+p {
+  color: rgb(85, 85, 85);
+}
+/* transition */
+a,
+.btn {
+  transition: all 300ms ease;
+  font-family: inherit;
+}
+/* body */
+body {
+  background-color: var(--primary-color-body);
+  font-family: "Open Sans";
+  position: relative;
+}
+
+/* navbar */
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  background-color: var(--primary-color-navbar);
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+.nav-links {
+  gap: 2rem;
+}
+a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.logo {
+  font-size: 2rem;
+  cursor: default;
+  color: white;
+}
+.logo:hover {
+}
+/* Dark mode */
+#mode-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+/* section */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+.section-container {
+  display: flex;
+}
+/* profile */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+.section-pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+/* portrait */
+.portrait {
+  border-radius: 50%;
+}
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+.section-text-p1 {
+  font-weight: 600;
+  text-align: center;
+}
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+/* icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+/* button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  font-weight: 600;
+  padding: 1rem;
+  width: 11rem;
+  border-radius: 2rem;
+}
+.btn-color-1,
+.btn-color-2 {
+  border: #d1a176 0.1rem solid;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+.btn-color-1,
+.btn-color-2:hover {
+  background-color: #e9b384;
+}
+
+.btn-color-1:hover {
+  background-color: #d1a176;
+}
+/* competences section */
+.card-container-competences {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1300px;
+  justify-content: center;
+  align-items: center;
+}
+.competences-section-card {
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 0 10px;
+  height: 150px;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer; */
+
+  background-color: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+/* contact */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  /* background-color: #eadbc8; */
+  padding: 0 20px;
+  margin: 0 10px;
+  height: 150px;
+  width: calc(40% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  background: var(--primary-color-card);
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+.card p {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: larger;
+}
+.contact-section-icon {
+  height: 4rem;
+}
+/* footer */
+footer {
+  background: var(--primary-color-footer);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+.social-links a i {
+  font-size: 2em;
+  color: #111;
+  opacity: 0.9;
+}
+.social-links a:hover {
+  transform: scale(1.2);
+}
+.footer-bottom {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+  width: 400px;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+/* competences */
+.competences-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.competences-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.competences-info-card {
+  background-color: white;
+  padding: 0 20px;
+  margin: 0 10px;
+  height: 200px;
+  width: calc(33%-20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+.competences-info-card:hover {
+  transform: scale(1.1);
+}
+.competences-img {
+  height: 154px;
+  width: 154px;
+}
+.competences-info-card p {
+  margin-top: 10px;
+}
+/* media queries */
+@media screen and (max-width: 1200px) {
+  .competences-info {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .section-text-p2 {
+    font-size: 1.25rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section-pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+}
