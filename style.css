@@ -10,22 +10,32 @@
 html {
   scroll-behavior: smooth;
 }
+.text-experience {
+  color: var(--secondary-color-p);
+}
 /* colors */
 :root {
   --primary-color-navbar: #a1ccd1;
   --primary-color-footer: #7c9d96;
   --primary-color-body: #f4f2de;
   --primary-color-card: white;
+  --primary-color-p: rgb(85, 85, 85);
+  --primary-color-title: black;
+  --secondary-color-p: black;
 }
 .dark-theme {
   --primary-color-navbar: #333;
   --primary-color-footer: #333;
   --primary-color-body: black;
-  --primary-color-card: #acb1d6;
+  --primary-color-card: white;
+  --primary-color-p: white;
+  --primary-color-title: white;
+  --secondary-color-p: black;
 }
 /* paragraphe */
 p {
-  color: rgb(85, 85, 85);
+  color: var(--primary-color-p);
+  line-height: 1.5;
 }
 /* transition */
 a,
@@ -111,6 +121,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: var(--primary-color-title);
 }
 .section-text-p1 {
   font-weight: 600;
@@ -129,6 +140,9 @@ section {
 /* icons */
 .icon {
   cursor: pointer;
+  height: 2rem;
+}
+.icon-experience-section {
   height: 2rem;
 }
 /* button */
@@ -185,6 +199,7 @@ section {
   border-color: rgb(163, 163, 163);
 }
 /* contact */
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -200,7 +215,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 
   background: var(--primary-color-card);
   border-radius: 2rem;
@@ -211,6 +225,8 @@ section {
   margin-top: 20px;
   font-weight: 300;
   font-size: larger;
+  cursor: pointer;
+  color: var(--secondary-color-p);
 }
 .contact-section-icon {
   height: 4rem;
@@ -297,6 +313,10 @@ footer {
   margin: auto 0;
 }
 /* competences */
+#competences {
+  position: relative;
+}
+
 .competences-section {
   display: flex;
   align-items: center;
@@ -330,6 +350,7 @@ footer {
 .competences-img {
   height: 154px;
   width: 154px;
+  border-radius: 2rem;
 }
 .competences-info-card p {
   margin-top: 10px;
@@ -338,6 +359,7 @@ footer {
 @media screen and (max-width: 1200px) {
   .competences-info {
     flex-direction: column;
+    gap: 20px;
   }
   .title {
     font-size: 2rem;
@@ -360,5 +382,11 @@ footer {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .about-pic {
+    width: 300px;
   }
 }
