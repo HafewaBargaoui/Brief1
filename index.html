@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potfolio de Hafawa Bargaoui</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="icon.png" />
+  </head>
+  <body>
+    <!--  navbar  -->
+    <nav id="desktop-nav">
+      <div class="logo">&lt; Hafawa /&gt;</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#">Accueil </a></li>
+          <li><a href="#about">À propos de moi</a></li>
+          <li><a href="#experiences">Expériences professionnelles </a></li>
+          <!-- <li><a href="#formation">Formation</a></li> -->
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="dark-mode">
+        <img src="./assets/moon.png" alt="lune" id="mode-icon"/>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-pic-container">
+        <img
+          class="portrait"
+          src="./assets/portrait.jpg"
+          alt="Hafewa Bargaoui profile picture"
+        />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, je suis</p>
+        <h1 class="title">Hafawa Bargaoui</h1>
+        <p class="section-text-p2">Développeuse Front-End</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/CV_Hafawa_Bargaoui.pdf')"
+          >
+            Télécharger mon CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contactez-moi
+          </button>
+        </div>
+        <div class="socials-container">
+          <a href="https://github.com/HafewaBargaoui" target="_blank">
+            <img src="./assets/github.png" alt="My Github profile" class="icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/hafewa-bargaoui-31a97953/"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My Linkedin profile"
+              class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <img
+            src="./assets/coding.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container xx">
+          
+          <div class="text-container">
+            <p>
+              Reconvertie dans le développement web après une brève carrièred'enseignante-chercheuse à l'université, c'est ma curiosité pour lesnouvelles technologies qui me guide aujourd'hui. Polyvalente, autonomeet appréciant le travail en équipe, je serais ravie de rejoindre votreétablissement pour développer mes compétences et relever denouveaux défis.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    </section>
+    <!-- Expériences professionnelles section -->
+    <section id="experiences">
+      <h1 class="title">Expériences professionnelles</h1>
+    </section>
+          <!-- competences section -->
+    <section id="competences">
+      <h1 class="title">Compétences</h1>
+      <div class="competences-section">
+        <div class="competences-info">
+          <div class="competences-info-card">
+            <img src="./assets/html.png" class="competences-img" />
+            <p>HTML5</p>
+          </div>
+          <div class="competences-info-card">
+            <img src="./assets/CSS.png" class="competences-img" />
+            <p>CSS3</p>
+          </div>
+          <div class="competences-info-card">
+            <img src="./assets/tailwind.png" class="competences-img" />
+            <p>Tailwind</p>
+          </div>
+          <div class="competences-info-card">
+            <img src="./assets/javascript.png" class="competences-img" />
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <h1 class="title">Contactez-Moi</h1>
+      <div class="card-container">
+        <div class="card">
+          <a href="mailto:hafewa.bargaoui@gmail.com"
+            ><img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="contact-section-icon"
+            />
+          </a>
+          <p>hafewa.bargaoui@gmail.com</p>
+        </div>
+        <div class="card">
+          <a
+            href="https://www.linkedin.com/in/hafewa-bargaoui-31a97953/"
+            target="_blank"
+          >
+            <img
+              src="./assets/email.png"
+              alt="Linkedin icon"
+              class="contact-section-icon"
+            />
+          </a>
+          <p>Linkedin</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Le footer  -->
+    <footer class="footer">
+      <div class="social-links">
+        <a href="mailto:hafewa.bargaoui@gmail.com"
+          ><i class="fa-solid fa-envelope-circle-check"></i
+        ></a>
+        <a href="https://github.com/HafewaBargaoui" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/hafewa-bargaoui-31a97953/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Hafewa BARGAOUI, Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script>
+      var icon= document.getElementById("mode-icon");
+      icon.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+          icon.src="./assets/sun.png"
+        }
+        else{
+          icon.src="./assets/moon.png"
+        }
+      }
+    </script>
+  </body>
+</html>
